@@ -19,29 +19,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUE-fE-4wP">
-                                <rect key="frame" x="0.0" y="762" width="414" height="100"/>
+                                <rect key="frame" x="41.5" y="762" width="331" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzU-Fy-Jox">
-                                        <rect key="frame" x="8" y="8" width="260" height="38"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="8" y="8" width="204.5" height="38"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                         <color key="textColor" red="1" green="0.71708443315196713" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Do-yM-xKI">
-                                        <rect key="frame" x="8" y="54" width="260" height="38"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Do-yM-xKI">
+                                        <rect key="frame" x="8" y="54" width="204.5" height="38"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                         <color key="textColor" red="1" green="0.71708443315196713" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gs8-UL-7CC">
-                                        <rect key="frame" x="276" y="54" width="130" height="38"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gs8-UL-7CC">
+                                        <rect key="frame" x="220.5" y="54" width="102.5" height="38"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                         <color key="textColor" red="1" green="0.71708443315196713" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVm-lG-CYG">
-                                        <rect key="frame" x="276" y="8" width="130" height="38"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVm-lG-CYG">
+                                        <rect key="frame" x="220.5" y="8" width="102.5" height="38"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                         <color key="textColor" red="1" green="0.71708443315196713" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -76,26 +76,38 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QYU-Tq-RCe">
                                                 <rect key="frame" x="0.0" y="0.0" width="331" height="161.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cF-mj-98K">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cF-mj-98K" customClass="CircularButton" customModule="SimonSaysPersonal" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="161.5" height="161.5"/>
                                                         <color key="backgroundColor" red="0.78158708756345174" green="0.029276301320892296" blue="0.0073212899798015011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <connections>
+                                                            <action selector="colorButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wef-Yg-tfe"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXC-Bv-rkp">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXC-Bv-rkp" customClass="CircularButton" customModule="SimonSaysPersonal" customModuleProvider="target">
                                                         <rect key="frame" x="169.5" y="0.0" width="161.5" height="161.5"/>
                                                         <color key="backgroundColor" red="0.03536272789023575" green="0.5628657004949027" blue="0.93851126269035534" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <connections>
+                                                            <action selector="colorButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kfa-Ar-OBe"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3Qy-Zn-SRD">
                                                 <rect key="frame" x="0.0" y="169.5" width="331" height="161.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bk7-OQ-Lqy">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bk7-OQ-Lqy" customClass="CircularButton" customModule="SimonSaysPersonal" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="161.5" height="161.5"/>
                                                         <color key="backgroundColor" red="0.094605518590000007" green="0.81193329020000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <connections>
+                                                            <action selector="colorButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jce-Lg-vGg"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cN-Pw-bfm">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cN-Pw-bfm" customClass="CircularButton" customModule="SimonSaysPersonal" customModuleProvider="target">
                                                         <rect key="frame" x="169.5" y="0.0" width="161.5" height="161.5"/>
                                                         <color key="backgroundColor" red="0.94402363578680204" green="0.91527108976151728" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <connections>
+                                                            <action selector="colorButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hfg-vJ-P03"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -110,6 +122,9 @@
                                         <state key="normal" title="Action Button">
                                             <color key="titleColor" red="0.14346318960000001" green="0.04037572347" blue="0.43829314720000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="actionButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mn2-p5-GNb"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simon Says..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hj-bO-8Th">
                                         <rect key="frame" x="41.5" y="8" width="331" height="177.5"/>
@@ -136,16 +151,27 @@
                         </subviews>
                         <color key="backgroundColor" red="0.14346318963719487" green="0.040375723466704032" blue="0.43829314720812185" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qUE-fE-4wP" secondAttribute="trailing" id="6t5-4l-bAi"/>
+                            <constraint firstItem="qUE-fE-4wP" firstAttribute="width" secondItem="q2w-2i-KrT" secondAttribute="width" id="0Ab-7a-6eY"/>
                             <constraint firstItem="5ws-vb-tmN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9c4-gZ-UMi"/>
-                            <constraint firstItem="qUE-fE-4wP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ebh-ye-U9G"/>
                             <constraint firstItem="5ws-vb-tmN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PFF-yM-bm0"/>
+                            <constraint firstItem="qUE-fE-4wP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eOS-ZO-ltc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5ws-vb-tmN" secondAttribute="trailing" id="gYd-2v-WGc"/>
                             <constraint firstItem="qUE-fE-4wP" firstAttribute="top" secondItem="5ws-vb-tmN" secondAttribute="bottom" id="hcR-vx-c6D"/>
                             <constraint firstItem="qUE-fE-4wP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="t14-ei-c67"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="actionButton" destination="rcN-Qj-JXD" id="FQM-Ow-RV1"/>
+                        <outletCollection property="colorButtons" destination="2cF-mj-98K" collectionClass="NSMutableArray" id="hYp-xr-WlS"/>
+                        <outletCollection property="colorButtons" destination="xXC-Bv-rkp" collectionClass="NSMutableArray" id="B3S-JO-NGV"/>
+                        <outletCollection property="colorButtons" destination="Bk7-OQ-Lqy" collectionClass="NSMutableArray" id="SjM-gT-uVF"/>
+                        <outletCollection property="colorButtons" destination="1cN-Pw-bfm" collectionClass="NSMutableArray" id="758-Qm-MDR"/>
+                        <outletCollection property="playerLabels" destination="rzU-Fy-Jox" collectionClass="NSMutableArray" id="kOV-t6-StL"/>
+                        <outletCollection property="playerLabels" destination="1Do-yM-xKI" collectionClass="NSMutableArray" id="VTc-WO-5U0"/>
+                        <outletCollection property="scoreLabels" destination="NVm-lG-CYG" collectionClass="NSMutableArray" id="A76-ui-7vA"/>
+                        <outletCollection property="scoreLabels" destination="gs8-UL-7CC" collectionClass="NSMutableArray" id="ud4-yr-aST"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
