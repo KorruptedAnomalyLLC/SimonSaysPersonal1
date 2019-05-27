@@ -14,6 +14,8 @@
 		0C06C8B32291EB0C00F1CF64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C06C8B12291EB0C00F1CF64 /* LaunchScreen.storyboard */; };
 		0CC9691F2293A4B00024D9EE /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9691E2293A4B00024D9EE /* CircularButton.swift */; };
 		0CE9DFFD229C8E6900F0F8B4 /* eye_PNG35625.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE9DFFC229C8E6900F0F8B4 /* eye_PNG35625.png */; };
+		0CE9DFFF229C949E00F0F8B4 /* UIImage+Gif1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE9DFFE229C949E00F0F8B4 /* UIImage+Gif1.swift */; };
+		0CE9E001229C952500F0F8B4 /* trippybackground.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0CE9E000229C952500F0F8B4 /* trippybackground.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		0C06C8B42291EB0C00F1CF64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CC9691E2293A4B00024D9EE /* CircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
 		0CE9DFFC229C8E6900F0F8B4 /* eye_PNG35625.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eye_PNG35625.png; sourceTree = "<group>"; };
+		0CE9DFFE229C949E00F0F8B4 /* UIImage+Gif1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif1.swift"; sourceTree = "<group>"; };
+		0CE9E000229C952500F0F8B4 /* trippybackground.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = trippybackground.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 		0C06C8A72291EB0B00F1CF64 /* SimonSaysPersonal */ = {
 			isa = PBXGroup;
 			children = (
+				0CE9E000229C952500F0F8B4 /* trippybackground.gif */,
+				0CE9DFFE229C949E00F0F8B4 /* UIImage+Gif1.swift */,
 				0C06C8BA2291EB4300F1CF64 /* Resources */,
 				0CE9DFB72299E3A700F0F8B4 /* ViewController */,
 				0C06C8BB2291EB7000F1CF64 /* Storyboards */,
@@ -155,6 +161,7 @@
 				0C06C8B32291EB0C00F1CF64 /* LaunchScreen.storyboard in Resources */,
 				0C06C8B02291EB0C00F1CF64 /* Assets.xcassets in Resources */,
 				0C06C8AE2291EB0B00F1CF64 /* Main.storyboard in Resources */,
+				0CE9E001229C952500F0F8B4 /* trippybackground.gif in Resources */,
 				0CE9DFFD229C8E6900F0F8B4 /* eye_PNG35625.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CE9DFFF229C949E00F0F8B4 /* UIImage+Gif1.swift in Sources */,
 				0C06C8AB2291EB0B00F1CF64 /* ViewController.swift in Sources */,
 				0C06C8A92291EB0B00F1CF64 /* AppDelegate.swift in Sources */,
 				0CC9691F2293A4B00024D9EE /* CircularButton.swift in Sources */,

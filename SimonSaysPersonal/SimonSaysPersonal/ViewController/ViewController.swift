@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var actionButton: UIButton!
     @IBOutlet var playerLabels: [UILabel]!
     @IBOutlet var scoreLabels: [UILabel]!
+    @IBOutlet weak var gifImageView: UIImageView!
+    
     
     var currentPlayer = 0
     var scores = [0,0]
@@ -26,6 +28,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        gifImageView.loadGif(name: "trippybackground")
+        
         colorButtons = colorButtons.sorted() {
             $0.tag < $1.tag
         }
@@ -51,7 +56,7 @@ class ViewController: UIViewController {
         actionButton.setTitle("Start Game", for: .normal)
         actionButton.isEnabled = true
         for button in colorButtons {
-            button.alpha = 0.3
+            button.alpha = 0.7
             button.isEnabled = false
         }
         
@@ -95,7 +100,7 @@ class ViewController: UIViewController {
     func flash(button: CircularButton) {
         UIView.animate(withDuration: 0.5, animations: {
             button.alpha = 1.0
-            button.alpha = 0.3
+            button.alpha = 0.7
         }) { (bool) in
             self.playSequence()
         }

@@ -19,7 +19,7 @@ class CircularButton: UIButton {
             if isHighlighted {
                 alpha = 1.0
             } else {
-                alpha = 0.3
+                alpha = 0.7
             }
         }
     }
