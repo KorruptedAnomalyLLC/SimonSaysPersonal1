@@ -76,16 +76,16 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QYU-Tq-RCe">
                                                 <rect key="frame" x="0.0" y="0.0" width="331" height="161.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cF-mj-98K" customClass="CircularButton" customModule="SimonSaysPersonal" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cF-mj-98K" customClass="CircularButton" customModule="SimonSaysPersonal" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="161.5" height="161.5"/>
-                                                        <color key="backgroundColor" red="0.78158708756345174" green="0.029276301320892296" blue="0.0073212899798015011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal" image="eye_PNG35625.png"/>
                                                         <connections>
-                                                            <action selector="colorButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wef-Yg-tfe"/>
+                                                            <action selector="colorButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eDP-en-elk"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXC-Bv-rkp" customClass="CircularButton" customModule="SimonSaysPersonal" customModuleProvider="target">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXC-Bv-rkp" customClass="CircularButton" customModule="SimonSaysPersonal" customModuleProvider="target">
                                                         <rect key="frame" x="169.5" y="0.0" width="161.5" height="161.5"/>
-                                                        <color key="backgroundColor" red="0.03536272789023575" green="0.5628657004949027" blue="0.93851126269035534" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal" image="eye_PNG35625.png"/>
                                                         <connections>
                                                             <action selector="colorButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kfa-Ar-OBe"/>
                                                         </connections>
@@ -95,16 +95,16 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3Qy-Zn-SRD">
                                                 <rect key="frame" x="0.0" y="169.5" width="331" height="161.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bk7-OQ-Lqy" customClass="CircularButton" customModule="SimonSaysPersonal" customModuleProvider="target">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bk7-OQ-Lqy" customClass="CircularButton" customModule="SimonSaysPersonal" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="161.5" height="161.5"/>
-                                                        <color key="backgroundColor" red="0.094605518590000007" green="0.81193329020000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal" image="eye_PNG35625.png"/>
                                                         <connections>
                                                             <action selector="colorButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jce-Lg-vGg"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cN-Pw-bfm" customClass="CircularButton" customModule="SimonSaysPersonal" customModuleProvider="target">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cN-Pw-bfm" customClass="CircularButton" customModule="SimonSaysPersonal" customModuleProvider="target">
                                                         <rect key="frame" x="169.5" y="0.0" width="161.5" height="161.5"/>
-                                                        <color key="backgroundColor" red="0.94402363578680204" green="0.91527108976151728" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal" image="eye_PNG35625.png"/>
                                                         <connections>
                                                             <action selector="colorButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hfg-vJ-P03"/>
                                                         </connections>
@@ -123,14 +123,16 @@
                                             <color key="titleColor" red="0.14346318960000001" green="0.04037572347" blue="0.43829314720000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
-                                            <action selector="actionButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mn2-p5-GNb"/>
+                                            <action selector="actionButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4RT-2g-yZ1"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simon Says..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hj-bO-8Th">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KorruptioN Says..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hj-bO-8Th">
                                         <rect key="frame" x="41.5" y="8" width="331" height="177.5"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="35"/>
-                                        <color key="textColor" red="0.14346318960000001" green="0.04037572347" blue="0.43829314720000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="35"/>
+                                        <color key="textColor" red="0.22336093078461539" green="0.43829314720000001" blue="0.0084287143692307401" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
+                                        <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <size key="shadowOffset" width="3" height="-1"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -178,4 +180,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="eye_PNG35625.png" width="1604" height="1603"/>
+    </resources>
 </document>
