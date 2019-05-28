@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0C06C8A92291EB0B00F1CF64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C06C8A82291EB0B00F1CF64 /* AppDelegate.swift */; };
-		0C06C8AB2291EB0B00F1CF64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C06C8AA2291EB0B00F1CF64 /* ViewController.swift */; };
 		0C06C8AE2291EB0B00F1CF64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C06C8AC2291EB0B00F1CF64 /* Main.storyboard */; };
 		0C06C8B02291EB0C00F1CF64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C06C8AF2291EB0C00F1CF64 /* Assets.xcassets */; };
 		0C06C8B32291EB0C00F1CF64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C06C8B12291EB0C00F1CF64 /* LaunchScreen.storyboard */; };
+		0C840230229DE05000DAEC3C /* EyeballViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84022F229DE05000DAEC3C /* EyeballViewController.swift */; };
 		0CA58B37229DBD2300433592 /* trippyMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CA58B36229DBD2300433592 /* trippyMusic.mp3 */; };
 		0CC9691F2293A4B00024D9EE /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9691E2293A4B00024D9EE /* CircularButton.swift */; };
-		0CE9DFFD229C8E6900F0F8B4 /* eye_PNG35625.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE9DFFC229C8E6900F0F8B4 /* eye_PNG35625.png */; };
 		0CE9DFFF229C949E00F0F8B4 /* UIImage+Gif1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE9DFFE229C949E00F0F8B4 /* UIImage+Gif1.swift */; };
 		0CE9E001229C952500F0F8B4 /* trippybackground.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0CE9E000229C952500F0F8B4 /* trippybackground.gif */; };
 /* End PBXBuildFile section */
@@ -22,14 +21,13 @@
 /* Begin PBXFileReference section */
 		0C06C8A52291EB0B00F1CF64 /* SimonSaysPersonal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimonSaysPersonal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C06C8A82291EB0B00F1CF64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C06C8AA2291EB0B00F1CF64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0C06C8AD2291EB0B00F1CF64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C06C8AF2291EB0C00F1CF64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C06C8B22291EB0C00F1CF64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C06C8B42291EB0C00F1CF64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C84022F229DE05000DAEC3C /* EyeballViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeballViewController.swift; sourceTree = "<group>"; };
 		0CA58B36229DBD2300433592 /* trippyMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trippyMusic.mp3; sourceTree = "<group>"; };
 		0CC9691E2293A4B00024D9EE /* CircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
-		0CE9DFFC229C8E6900F0F8B4 /* eye_PNG35625.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eye_PNG35625.png; sourceTree = "<group>"; };
 		0CE9DFFE229C949E00F0F8B4 /* UIImage+Gif1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif1.swift"; sourceTree = "<group>"; };
 		0CE9E000229C952500F0F8B4 /* trippybackground.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = trippybackground.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,7 +78,6 @@
 			children = (
 				0C06C8A82291EB0B00F1CF64 /* AppDelegate.swift */,
 				0C06C8AF2291EB0C00F1CF64 /* Assets.xcassets */,
-				0CE9DFFC229C8E6900F0F8B4 /* eye_PNG35625.png */,
 				0C06C8B42291EB0C00F1CF64 /* Info.plist */,
 			);
 			path = Resources;
@@ -98,7 +95,7 @@
 		0CE9DFB72299E3A700F0F8B4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				0C06C8AA2291EB0B00F1CF64 /* ViewController.swift */,
+				0C84022F229DE05000DAEC3C /* EyeballViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -166,7 +163,6 @@
 				0C06C8AE2291EB0B00F1CF64 /* Main.storyboard in Resources */,
 				0CE9E001229C952500F0F8B4 /* trippybackground.gif in Resources */,
 				0CA58B37229DBD2300433592 /* trippyMusic.mp3 in Resources */,
-				0CE9DFFD229C8E6900F0F8B4 /* eye_PNG35625.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,8 +174,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CE9DFFF229C949E00F0F8B4 /* UIImage+Gif1.swift in Sources */,
-				0C06C8AB2291EB0B00F1CF64 /* ViewController.swift in Sources */,
 				0C06C8A92291EB0B00F1CF64 /* AppDelegate.swift in Sources */,
+				0C840230229DE05000DAEC3C /* EyeballViewController.swift in Sources */,
 				0CC9691F2293A4B00024D9EE /* CircularButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

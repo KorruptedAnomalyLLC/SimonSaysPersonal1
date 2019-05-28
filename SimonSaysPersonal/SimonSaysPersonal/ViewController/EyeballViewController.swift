@@ -1,16 +1,16 @@
 //
-//  ViewController.swift
+//  EyeballViewController.swift
 //  SimonSaysPersonal
 //
-//  Created by Austin West on 5/19/19.
+//  Created by Austin West on 5/28/19.
 //  Copyright © 2019 Austin West. All rights reserved.
 //
 
 import UIKit
-import AVFoundation
+import AVKit
 
-class ViewController: UIViewController {
-    
+class EyeballViewController: UIViewController {
+
     var audioPlayer:AVAudioPlayer?
     
     @IBOutlet var colorButtons: [CircularButton]!
@@ -31,19 +31,19 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        audio player
+        //        audio player
         guard let path = Bundle.main.path(forResource: "trippyMusic", ofType: "mp3")
             else { return }
         let url = URL(fileURLWithPath: path)
         audioPlayer = try? AVAudioPlayer(contentsOf: url, fileTypeHint: nil)
         audioPlayer?.prepareToPlay()
-//        volume
+        //        volume
         audioPlayer?.setVolume(0.5, fadeDuration: 0.1)
         audioPlayer?.play()
-//        loop the audio forever
+        //        loop the audio forever
         audioPlayer?.numberOfLoops = -1
         
-//        load GIF image by string name
+        //        load GIF image by string name
         gifImageView.loadGif(name: "trippybackground")
         
         colorButtons = colorButtons.sorted() {
@@ -58,6 +58,12 @@ class ViewController: UIViewController {
         createNewGame()
     }
     
+    @IBAction func eyeBallTapped(_ sender: Any){
+        print("Squish")
+    }
+    
+    
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if gameEnded {
             gameEnded = false
@@ -71,7 +77,7 @@ class ViewController: UIViewController {
         actionButton.setTitle("Start Game", for: .normal)
         actionButton.isEnabled = true
         for button in colorButtons {
-            button.alpha = 0.7
+            button.alpha = 1.0
             button.isEnabled = false
         }
         
@@ -84,6 +90,8 @@ class ViewController: UIViewController {
     
     func updateScoreLabels() {
         for (index,label) in scoreLabels.enumerated() {
+            //protection against crashing
+            guard index < scores.count else {return}
             label.text = "\(scores[index])"
         }
     }
@@ -115,7 +123,9 @@ class ViewController: UIViewController {
     func flash(button: CircularButton) {
         UIView.animate(withDuration: 0.5, animations: {
             button.alpha = 1.0
-            button.alpha = 0.7
+            button.backgroundColor = .white
+            button.alpha = 1.0
+            button.backgroundColor = nil
         }) { (bool) in
             self.playSequence()
         }
@@ -160,4 +170,7 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    
+
 }
