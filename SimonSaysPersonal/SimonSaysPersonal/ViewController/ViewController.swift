@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
+    
+    var audioPlayer:AVAudioPlayer?
     
     @IBOutlet var colorButtons: [CircularButton]!
     @IBOutlet weak var actionButton: UIButton!
@@ -28,7 +31,19 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        audio player
+        guard let path = Bundle.main.path(forResource: "trippyMusic", ofType: "mp3")
+            else { return }
+        let url = URL(fileURLWithPath: path)
+        audioPlayer = try? AVAudioPlayer(contentsOf: url, fileTypeHint: nil)
+        audioPlayer?.prepareToPlay()
+//        volume
+        audioPlayer?.setVolume(0.5, fadeDuration: 0.1)
+        audioPlayer?.play()
+//        loop the audio forever
+        audioPlayer?.numberOfLoops = -1
         
+//        load GIF image by string name
         gifImageView.loadGif(name: "trippybackground")
         
         colorButtons = colorButtons.sorted() {
