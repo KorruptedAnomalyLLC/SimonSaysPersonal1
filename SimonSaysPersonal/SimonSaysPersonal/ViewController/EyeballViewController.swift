@@ -28,7 +28,7 @@ class EyeballViewController: UIViewController {
     var colorsToTap = [Int]()
     
     var gameEnded = false
-    
+    //    ;lxjkhgdsdf;lgjkvhn
     override func viewDidLoad() {
         super.viewDidLoad()
         //        audio player
